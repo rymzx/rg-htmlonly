@@ -1,0 +1,73 @@
+a:link {
+  color: red;
+  text-decoration: none;
+}
+.judul-isi {
+  text-align: center;
+}
+.gambar-halaman {
+  box-sizing: border-box;
+  border: 3px solid rgb(248, 24, 43);
+  border-radius: 20px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#judul-about,
+.judul-form {
+  justify-content: center;
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.isi-about p {
+  /* background-color: red; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+.video-about {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form > p,
+form {
+  text-align: center;
+  color: red;
+}
+form {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer {
+  justify-content: center;
+  text-align: center;
+}
+
+.isi-about p {
+  /* animation-duration: 3s;
+  animation-name: slidein; */
+  animation: Fade 5s linear 1s forwards;
+}
+@keyframes Fade {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.form p {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.form p {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
